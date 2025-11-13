@@ -20,6 +20,7 @@ export default function App() {
     Cap: "https://cdn.pixabay.com/photo/2016/03/31/20/53/baseball-cap-1299777_960_720.jpg",
   };
 
+
   // Fetch products from backend
   useEffect(() => {
     fetch(`${BASE_URL}/products`)
