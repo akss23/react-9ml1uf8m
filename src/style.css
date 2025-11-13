@@ -11,10 +11,9 @@
   gap: 20px;
 }
 
-.card {
-  background: #f4f4f4;
-  padding: 15px;
-  width: 200px;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
+
