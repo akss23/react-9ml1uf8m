@@ -12,7 +12,7 @@ export default function App() {
   // ✅ Image mapping (relevant photos for each product)
   const productImages = {
     "T-shirt":
-      "https://cdn.pixabay.com/photo/2016/03/27/19/40/t-shirt-1281575_960_720.jpg",
+      "https://chriscross.in/products/plain-navy-blue-t-shirt.jpg",
     Jeans:
       "https://cdn.pixabay.com/photo/2016/11/29/04/12/jeans-1867077_960_720.jpg",
     Sneakers:
