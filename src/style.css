@@ -1,27 +1,62 @@
-/* Reset and base */
 body {
   font-family: "Poppins", sans-serif;
-  background: linear-gradient(135deg, #f0f4ff, #ffffff);
+  background: linear-gradient(135deg, #f8fafc, #e0f2fe);
   margin: 0;
   color: #222;
 }
 
-/* Main container */
-.app {
-  text-align: center;
-  padding: 50px 20px;
+/* Navbar */
+.navbar {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Heading */
-h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 40px;
-  color: #1e3a8a;
+.navbar h2 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.cart span {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.cart span:hover {
+  transform: scale(1.2);
+}
+
+/* Filter bar */
+.filter-bar {
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.filter-bar button {
+  background: white;
+  border: 2px solid #1e3a8a;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-bar button:hover {
+  background: #1e3a8a;
+  color: white;
+}
+
+.filter-bar button.active {
+  background: #1e3a8a;
+  color: white;
 }
 
 /* Product grid */
@@ -41,6 +76,7 @@ h1 {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   transform: translateY(0);
+  text-align: center;
 }
 
 .card:hover {
@@ -48,9 +84,15 @@ h1 {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
+.product-img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
 /* Product details */
 .card h3 {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: #1e293b;
   margin-bottom: 8px;
 }
@@ -61,20 +103,30 @@ h1 {
   color: #16a34a;
 }
 
-/* Footer */
-footer {
-  margin-top: 50px;
+/* Loading & empty states */
+.loading, .no-products {
+  text-align: center;
+  font-size: 1.2rem;
   color: #555;
-  font-size: 0.9rem;
-  font-weight: 500;
+  margin-top: 50px;
 }
 
-/* Responsive tweaks */
+/* Footer */
+footer {
+  margin-top: 60px;
+  color: #555;
+  font-size: 0.9rem;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* Responsive */
 @media (max-width: 600px) {
-  h1 {
-    font-size: 2rem;
+  .navbar h2 {
+    font-size: 1.3rem;
   }
-  .card {
-    padding: 20px;
+  .filter-bar {
+    flex-wrap: wrap;
+    gap: 10px;
   }
 }
