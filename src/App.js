@@ -16,7 +16,7 @@ export default function App() {
     Jeans:
       "https://cdn.pixabay.com/photo/2016/11/29/04/12/jeans-1867077_960_720.jpg",
     Sneakers:
-      "https://www.google.com/imgres?q=pixabay%20photo%20of%20sneakers&imgurl=https%3A%2F%2Fmedia.istockphoto.com%2Fid%2F1688015574%2Fphoto%2Fwhite-sneaker-isolated-on-white-background.jpg%3Fb%3D1%26s%3D612x612%26w%3D0%26k%3D20%26c%3DlMTQkWhlTwsw0Gs6Psupv7bY4IIswW5GHzpEPKh_dtc%3D&imgrefurl=https%3A%2F%2Fpixabay.com%2Fimages%2Fsearch%2Fsneakers%2F&docid=zfgoeGIMsQ03gM&tbnid=PTWeu1krmsphbM&vet=12ahUKEwithPzf8O2QAxWwxzgGHWOpMGIQM3oECCIQAA..i&w=612&h=408&hcb=2&ved=2ahUKEwithPzf8O2QAxWwxzgGHWOpMGIQM3oECCIQAA",
+      "https://cdn.pixabay.com/photo/2016/11/29/09/32/shoes-1869136_960_720.jpg",
     Cap: "https://cdn.pixabay.com/photo/2016/03/31/20/53/baseball-cap-1299777_960_720.jpg",
   };
 
