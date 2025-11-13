@@ -10,15 +10,32 @@ export default function App() {
   const [category, setCategory] = useState("All");
 
   // ✅ Image mapping (relevant photos for each product)
-  const productImages = {
-    "T-shirt":
-      "https://chriscross.in/products/plain-navy-blue-t-shirt.jpg",
-    Jeans:
-      "https://cdn.pixabay.com/photo/2016/11/29/04/12/jeans-1867077_960_720.jpg",
-    Sneakers:
-      "https://cdn.pixabay.com/photo/2016/11/29/09/32/shoes-1869136_960_720.jpg",
-    Cap: "https://cdn.pixabay.com/photo/2016/03/31/20/53/baseball-cap-1299777_960_720.jpg",
-  };
+  const products = [
+  {
+    name: "Nike Air Zoom Sneakers",
+    price: 4999,
+    image: "https://images.unsplash.com/photo-1606813902915-d3b3da9d6b5f?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    name: "Adidas Classic Hoodie",
+    price: 2999,
+    image: "https://images.unsplash.com/photo-1602810318383-e8f7b4b06df0?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    name: "Levi’s Denim Jacket",
+    price: 3499,
+    image: "https://images.unsplash.com/photo-1603252109303-3c28b89e0b3b?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    name: "Casual Cotton T-Shirt",
+    price: 799,
+    image: "https://images.unsplash.com/photo-1600180758890-6c3b87f2d4be?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    name: "Analog Wrist Watch",
+    price: 2599,
+    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w
+
 
 
   // Fetch products from backend
