@@ -9,6 +9,17 @@ export default function App() {
   const [loading, setLoading] = useState(true);
   const [category, setCategory] = useState("All");
 
+  // ✅ Image mapping (relevant photos for each product)
+  const productImages = {
+    "T-shirt":
+      "https://cdn.pixabay.com/photo/2016/03/27/19/40/t-shirt-1281575_960_720.jpg",
+    Jeans:
+      "https://cdn.pixabay.com/photo/2016/11/29/04/12/jeans-1867077_960_720.jpg",
+    Sneakers:
+      "https://cdn.pixabay.com/photo/2016/11/29/09/32/shoes-1869136_960_720.jpg",
+    Cap: "https://cdn.pixabay.com/photo/2016/03/31/20/53/baseball-cap-1299777_960_720.jpg",
+  };
+
   // Fetch products from backend
   useEffect(() => {
     fetch(`${BASE_URL}/products`)
@@ -62,7 +73,7 @@ export default function App() {
           {filteredProducts.map((item) => (
             <div className="card" key={item.id || item._id}>
               <img
-                src={`https://picsum.photos/250?random=${item.id}`}
+                src={productImages[item.name] || productImages["T-shirt"]}
                 alt={item.name}
                 className="product-img"
               />
